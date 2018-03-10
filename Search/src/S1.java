@@ -5,6 +5,9 @@ import java.util.Arrays;
  * For example,Given [5,7,7,8,8,10] and target value 8,return [3,4]
  * not found in the array return [-1,-1]
  *
+ * lower_bound算法返回第一个大于等于给定值所在的位置
+ * upper_bound算法返回第一个大于给定值所在的位置
+ *
  * */
 //已经排好序的  用二分查找法
 public class S1 {
@@ -43,7 +46,7 @@ public class S1 {
         }
     public static void main(String[] args) {
 
-        int[] nums = new int[]{5,7,7,8,8,10};
+        int[] nums = new int[]{5,7,7,8,8,8,10};
         int target = 8;
         System.out.println(Arrays.toString(searchRange(nums, target)));
 
