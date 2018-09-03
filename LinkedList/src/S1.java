@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class S1 {
 
-    ArrayList<Integer> arrayList = new ArrayList<>();
+    ArrayList<Integer> arrayList = new ArrayList<Integer>();
 
     public  ArrayList<Integer> printListFromTailToHead(ListNode listNode)
     {
