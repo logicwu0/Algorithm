@@ -17,13 +17,10 @@ public class S6 {
                 cur = cur.next;
             }
         }
-        System.out.println(hashset);
-        System.out.println(hashset1);
         ListNode dummyNode = new ListNode(-1);
         dummyNode.next = head;
         ListNode prev = dummyNode;
         while(prev.next != null) {
-            System.out.println(prev.data);
             if(hashset1.contains(prev.next.data)) {
                 prev.next = prev.next.next;
             } else {
